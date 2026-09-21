@@ -9,18 +9,18 @@ class Solution {
             int pos = word.charAt(word.length() - 1) - '0';
 
             ans[pos - 1] = word.substring(0, word.length() - 1);
-        }
+        } 
 
-        String result = "";
+        String str = "";
 
         for (int i = 0; i < ans.length; i++) {
-            result += ans[i];
+            str += ans[i];
 
             if (i < ans.length - 1) {
-                result += " ";
+                str += " ";
             }
         }
 
-        return result;
+        return str;
     }
 }
